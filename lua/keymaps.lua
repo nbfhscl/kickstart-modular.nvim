@@ -1,6 +1,17 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+vim.keymap.set('n', '.', ';')
+vim.keymap.set('n', ' ', '.')
+vim.keymap.set('n', '<CR>', ':')
+vim.keymap.set('n', '\'', '"')
+vim.keymap.set('n', 'K', '<CR>Man <cword>')
+vim.keymap.set('n', '0', '^')
+vim.keymap.set('n', '^', '0')
+vim.keymap.set('n', 'D', 'dd')
+vim.keymap.set('n', '<leader>sa', ':w<CR>')
+vim.keymap.set('n', '<leader>so', ':so $MYVIMRC<CR>')
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
